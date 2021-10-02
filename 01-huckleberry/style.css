@@ -7,6 +7,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  min-height: 100%;
 }
 
 p {
@@ -28,19 +29,27 @@ header {
   margin-bottom: 32px;
 }
 
+.intro-chunk {
+  max-width: 256px;
+}
+
 strong {
   color: hsl(160deg, 100%, 30%);
 }
 
 main {
-  padding-top: 32px;
+  padding-top: 64px;
   background-color: hsl(0deg, 0%, 60%);
+  min-height: 100%;
 }
 
 .card {
   background-color: hsl(0deg, 0%, 100%);
   margin: 0 -32px;
   padding: 0 32px;
+  padding-bottom: 8px;
+  border-bottom: 8px solid hsl(0deg, 0%, 40%);
+  max-height: fit-content;
 }
 
 .indented-heading {
