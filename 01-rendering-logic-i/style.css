@@ -5,38 +5,38 @@
 
 html,
 body {
+  height: 100%;
   margin: 0;
   padding: 0;
-  height: 100%;
 }
 
 body {
   background-color: hsl(0deg, 0%, 60%);
 }
 
-p {
-  font-size: 1.25rem;
-}
-
 header {
-  padding-top: 64px;
-  padding-bottom: 32px;
-  border-bottom: 8px solid hsl(0deg, 0%, 40%);
   background-color: hsl(0deg, 0%, 100%);
+  border-bottom: 8px solid hsl(0deg, 0%, 40%);
+  padding-bottom: 32px;
+  padding-top: 64px;
 }
 
 .max-width-wrapper {
-  padding: 0 32px;
-  max-width: 746px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 746px;
+  padding: 0 32px;
 }
 
 @media (max-width: 800px) {
   .max-width-wrapper {
-    max-width: 100%;
     margin: 0;
+    max-width: 100%;
   }
+}
+
+.intro-chunk {
+  max-width: 328px;
 }
 
 .title {
@@ -44,8 +44,8 @@ header {
   margin-bottom: 32px;
 }
 
-.intro-chunk {
-  max-width: 328px;
+p {
+  font-size: 1.25rem;
 }
 
 strong {
@@ -58,20 +58,17 @@ main {
 
 .card {
   background-color: hsl(0deg, 0%, 100%);
-  margin: 0 -32px;
-  padding: 0 32px;
-  padding-bottom: 8px;
   border-bottom: 8px solid hsl(0deg, 0%, 40%);
+  margin: 0 -32px;
   max-height: fit-content;
+  padding: 0 32px 8px 32px;
 }
 
 .indented-heading {
-  display: inline-block;
-  font-size: 1.5rem;
   background-color: hsl(45deg, 100%, 50%);
   border-bottom: 8px solid hsl(45deg, 100%, 40%);
-  margin: 8px 0;
-  padding: 16px 32px;
-  margin-left: -48px;
-  padding-left: 48px;
+  display: inline-block;
+  font-size: 1.5rem;
+  margin: 8px 0 8px -48px;
+  padding: 16px 32px 16px 48px;
 }
