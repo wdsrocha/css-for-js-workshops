@@ -1,4 +1,4 @@
-# CSS for JS - Workshops
+# 🎨 CSS for JS - Workshops
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/423b7749-06f9-4ec8-950d-a8611a55ff67/deploy-status)](https://app.netlify.com/sites/wdsrocha-css-for-js/deploys)
 
