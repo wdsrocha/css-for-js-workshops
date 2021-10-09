@@ -1,0 +1,9 @@
+[build]
+  # base = "02-rendering-logic-ii"
+  publish = "build/"
+  command = "yarn build"
+
+[[redirects]]
+  from = "build/"
+  to = "02-rendering-logic-ii/"
+  status = 200
