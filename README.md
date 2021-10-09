@@ -9,7 +9,7 @@ Workshops are real-world-inspired problems presented in each module. The project
 and its goals are described in depth in the project's README.md file.
 
 1. [Rendering Logic I](01-rendering-logic-i/)
-2. Rendering Logic II
+2. [Rendering Logic II](02-rendering-logic-ii/)
 3. Modern Component Architecture
 4. Flexbox
 5. Responsive and Behavioural CSS
