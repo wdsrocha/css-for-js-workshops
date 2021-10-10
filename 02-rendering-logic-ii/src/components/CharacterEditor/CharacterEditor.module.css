@@ -29,5 +29,33 @@
 }
 
 .controlColumn {
+  position: relative;
   width: 50%;
+}
+
+@media (max-width: 600px) {
+  .header {
+    position: relative;
+    background-color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: auto;
+    padding: 8px;
+    z-index: 2;
+    border-radius: 8px;
+    border-top: 0;
+    border-left: 0;
+  }
+
+  .controlColumn {
+    margin-top: 420px;
+    min-width: 100%;
+    white-space: nowrap;
+    overflow-x: scroll;
+  }
+
+  .characterEditor {
+    padding-top: 64px;
+    padding-bottom: 0px;
+  }
 }

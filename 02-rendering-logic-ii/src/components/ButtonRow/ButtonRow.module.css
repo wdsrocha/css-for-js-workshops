@@ -1,4 +1,5 @@
 .buttonRow {
+  position: relative;
   overflow-x: auto;
   white-space: nowrap;
 }
