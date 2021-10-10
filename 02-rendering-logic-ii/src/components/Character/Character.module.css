@@ -6,3 +6,11 @@
   top: 128px;
   left: 60%;
 }
+
+@media (max-width: 600px) {
+  .character {
+    height: 500px;
+    top: 64px;
+    left: 32px;
+  }
+}
