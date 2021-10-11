@@ -48,43 +48,45 @@ function App() {
             controls below. What sort of adventure will you embark on?{' '}
           </p>
         </header>
-        <div className={styles.controlColumn}>
-          <ControlPane
-            title="Bodies"
-            options={bodyOptions}
-            currentOption={body}
-            handleSelectOption={setBody}
-          />
-          <ControlPane
-            title="Heads"
-            options={headOptions}
-            currentOption={head}
-            handleSelectOption={setHead}
-          />
-          <ControlPane
-            title="Faces"
-            options={faceOptions}
-            currentOption={face}
-            handleSelectOption={setFace}
-          />
-          <ControlPane
-            title="Accessories"
-            options={accessoryOptions}
-            currentOption={accessory}
-            handleSelectOption={setAccessory}
-          />
-          <ControlPane
-            title="Skin Color"
-            options={skinColorOptions}
-            currentOption={skinColor}
-            handleSelectOption={setSkinColor}
-          />
-          <ControlPane
-            title="Clothing Color"
-            options={clothesColorOptions}
-            currentOption={clothesColor}
-            handleSelectOption={setClothesColor}
-          />
+        <div className={styles.controlColumnWrapper}>
+          <div className={styles.controlColumn}>
+            <ControlPane
+              title="Bodies"
+              options={bodyOptions}
+              currentOption={body}
+              handleSelectOption={setBody}
+            />
+            <ControlPane
+              title="Heads"
+              options={headOptions}
+              currentOption={head}
+              handleSelectOption={setHead}
+            />
+            <ControlPane
+              title="Faces"
+              options={faceOptions}
+              currentOption={face}
+              handleSelectOption={setFace}
+            />
+            <ControlPane
+              title="Accessories"
+              options={accessoryOptions}
+              currentOption={accessory}
+              handleSelectOption={setAccessory}
+            />
+            <ControlPane
+              title="Skin Color"
+              options={skinColorOptions}
+              currentOption={skinColor}
+              handleSelectOption={setSkinColor}
+            />
+            <ControlPane
+              title="Clothing Color"
+              options={clothesColorOptions}
+              currentOption={clothesColor}
+              handleSelectOption={setClothesColor}
+            />
+          </div>
         </div>
       </MaxWidthWrapper>
     </main>
