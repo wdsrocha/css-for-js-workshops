@@ -1,6 +1,7 @@
 {
   "private": true,
   "workspaces": [
-    "02-rendering-logic-ii"
+    "02-rendering-logic-ii",
+    "03-modern-component-architecture"
   ]
 }

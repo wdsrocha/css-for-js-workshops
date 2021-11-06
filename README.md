@@ -10,7 +10,7 @@ and its goals are described in depth in the project's README.md file.
 
 1. [Rendering Logic I](01-rendering-logic-i/)
 2. [Rendering Logic II](02-rendering-logic-ii/)
-3. Modern Component Architecture
+3. [Modern Component Architecture](03-modern-component-architecture)
 4. Flexbox
 5. Responsive and Behavioural CSS
 6. Typography and Images
