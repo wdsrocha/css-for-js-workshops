@@ -1,5 +1,5 @@
 import { Meta, Story } from "@storybook/addon-docs/blocks";
-import Select from "./Select";
+import { Select } from "./Select";
 
 <Meta title="Select" component={Select} />
 
@@ -16,6 +16,7 @@ export const ManagedSelect = () => {
       <option value="newest">Newest Releases</option>
       <option value="price">Price</option>
       <option value="curated">Curated</option>
+      <option value="foo">Really long text to tesssssssssssssssssssst</option>
     </Select>
   );
 };

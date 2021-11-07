@@ -6,7 +6,7 @@ interface Props {
   [x: string]: any;
 }
 
-export const VisuallyHidden = ({ children, ...delegated }: Props) => {
+export const VisuallyHidden = ({ children, ...props }: Props) => {
   const [forceShow, setForceShow] = React.useState(false);
 
   React.useEffect(() => {
@@ -35,7 +35,7 @@ export const VisuallyHidden = ({ children, ...delegated }: Props) => {
     return children;
   }
 
-  return <Wrapper {...delegated}>{children}</Wrapper>;
+  return <Wrapper {...props}>{children}</Wrapper>;
 };
 
 const Wrapper = styled.div`

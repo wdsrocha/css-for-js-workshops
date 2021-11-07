@@ -14,7 +14,14 @@ const icons = {
   "chevron-down": ChevronDown,
 };
 
-const Icon = ({ id, size, strokeWidth = 1, ...delegated }) => {
+interface Props {
+  id: keyof typeof icons;
+  size: number;
+  strokeWidth?: number;
+  [x: string]: any;
+}
+
+export const Icon = ({ id, size, strokeWidth = 1, ...props }: Props) => {
   const Component = icons[id];
 
   if (!Component) {
@@ -22,19 +29,16 @@ const Icon = ({ id, size, strokeWidth = 1, ...delegated }) => {
   }
 
   return (
-    <Wrapper
-      style={{
-        "--size": size + "px",
-        "--stroke-width": strokeWidth + "px",
-      }}
-      {...delegated}
-    >
+    <Wrapper size={`${size}px`} strokeWidth={`${strokeWidth}px`} {...props}>
       <Component color="currentColor" size={size} />
     </Wrapper>
   );
 };
 
-const Wrapper = styled.div`
+const Wrapper = styled.div<{ size: string; strokeWidth: string }>`
+  --size: ${({ size }) => size};
+  --stroke-width: ${({ strokeWidth }) => strokeWidth};
+
   width: var(--size);
   height: var(--size);
 
@@ -55,5 +59,3 @@ const Wrapper = styled.div`
     stroke-width: var(--stroke-width);
   }
 `;
-
-export default Icon;
