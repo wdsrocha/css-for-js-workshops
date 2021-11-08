@@ -32,7 +32,7 @@ Obs.: A workshop without a link means that I haven't solved it yet 👀
 3. Create a directory in the `${moduleIndex}-${moduleSlugName}` format
 4. Create a README inside this module directory, based on previous modules
 
-## Publish
+## Deploy
 
 1. Follow the instructions in each module's README to build them individually
 2. Run `netlify deploy` in **this directory** to check preview a draft
