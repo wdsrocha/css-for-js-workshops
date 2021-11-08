@@ -29,7 +29,12 @@ export const Icon = ({ id, size, strokeWidth = 1, ...props }: Props) => {
   }
 
   return (
-    <Wrapper size={`${size}px`} strokeWidth={`${strokeWidth}px`} {...props}>
+    <Wrapper
+      aria-hidden={true}
+      size={`${size}px`}
+      strokeWidth={`${strokeWidth}px`}
+      {...props}
+    >
       <Component color="currentColor" size={size} />
     </Wrapper>
   );

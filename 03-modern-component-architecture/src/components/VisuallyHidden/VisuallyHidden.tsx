@@ -32,7 +32,7 @@ export const VisuallyHidden = ({ children, ...props }: Props) => {
   }, []);
 
   if (forceShow) {
-    return children;
+    return <>{children}</>;
   }
 
   return <Wrapper {...props}>{children}</Wrapper>;

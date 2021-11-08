@@ -5,6 +5,13 @@ import { IconInput } from "./IconInput";
   title="IconInput"
   component={IconInput}
   argTypes={{
+    width: {
+      control: {
+        type: "number",
+        min: 0,
+        max: 500,
+      },
+    },
     placeholder: {
       control: {
         type: "text",
@@ -37,6 +44,7 @@ export const Template = (args) => <IconInput {...args} />;
 <Story
   name="Default"
   args={{
+    width: 250,
     placeholder: "Search…",
     label: "Search",
     icon: "search",
